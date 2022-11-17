@@ -9,10 +9,10 @@
 
 ### EC2實例具體設置
 
++ blackjlearnaws-web-1a
 + Amazon Linux 2 AMI
 + t2.micro
 + blackjlearnaws-vpc
-+ blackjlearnaws-web-1a
 + 自動分配公有IP
 + 內網IP:172.16.10.10/32
 + Name:blackjlearnaws-web1
@@ -25,7 +25,7 @@ $ cp ~/Downloads/blackjlearnaws-ssh-key.pem ./
 $ chmod 400 blackjlearnaws-ssh-key.pem
 
 #Amazon Linux 2
-$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user@18.183.174.53
+$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user@3.112.45.44 
 >
 ```
 
