@@ -25,7 +25,7 @@ $ cp ~/Downloads/blackjlearnaws-ssh-key.pem ./
 $ chmod 400 blackjlearnaws-ssh-key.pem
 
 #Amazon Linux 2
-$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user/ip
+$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user@18.183.174.53
 >
 ```
 
