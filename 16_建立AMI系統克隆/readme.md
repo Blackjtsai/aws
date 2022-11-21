@@ -63,6 +63,11 @@ $ git version
 # 可選安裝nmap
 $ sudo yum install nmap -y
 ############################################
+## 安裝 nano
+$ apt-get update
+$ apt-get upgrade
+$ apt install nano
+$ nano filename.xx
 # OS重新啟動
 $ sudo init 0
 # $ sudo reboot

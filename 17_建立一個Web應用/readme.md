@@ -46,3 +46,5 @@ $ docker logs -f deeplearnaws-web
 $ docker container stop deeplearnaws-web
 $ docker container rm deeplearnaws-web
 $ docker ps
+```
+
