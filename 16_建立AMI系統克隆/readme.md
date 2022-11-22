@@ -23,7 +23,7 @@ https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/AMIs.html
 
 ##################################################
 # Amazon Linux 2
-$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user@54.249.153.122
+$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user@18.177.135.117
 ##################################################
 # 安全登入訊息
 $ touch .hushlogin

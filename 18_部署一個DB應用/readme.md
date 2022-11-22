@@ -3,9 +3,10 @@
 
 ## 知識點
 
+* 建立DB私有網路安全組，開放3306-Mssql端口
 * 在公開網路中建立NAT網關
 * 建立DB私有網路路由表，設置NAT網關
-* 建立DB私有網路安全組，開放3306-Mssql端口
+
 
 ## 實戰演習
 
@@ -16,20 +17,21 @@
 + Name : blackjtsaiaws-web-nat
 + Subnet : blackjtsaiaws-web-1a
 + ELastic IP (收費的 要刪掉喔~)
-
-## 路由表
-
-+ Name : blackjlearnaws-db-rtb
-+ Target : blackjlearnaws-web-nat -> 0.0.0.0/0
+  +  Elastic IP Address（Elastic IP Address，簡稱EIP），是可以獨立購買和持有的公網IP地址資源。目前，EIP可綁定到專用網路類型的ECS執行個體、專用網路類型的私網SLB執行個體和NAT Gateway上。  
+  +  https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html
 
 
 ### 安全組
 
 + Name : blackjlearnaws-db-sg
 + Port : 3306
+## 路由表
+
++ Name : blackjlearnaws-db-rtb
++ Target : blackjlearnaws-web-nat -> 0.0.0.0/0
 
 
----------------------------------------------------------
+-----------------------------------------------
 ### NAT 類型
 
 + 網路位址轉換(英語：Network Address Translation，縮寫：NAT)是一種實現內網主機與外網通訊的方法，它會在IP封包通過路由器或防火牆時重寫來源IP地址或目的IP位址的技術，NAT在真實的網絡環境中隨處可見，
