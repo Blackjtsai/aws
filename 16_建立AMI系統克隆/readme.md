@@ -23,7 +23,8 @@ https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/AMIs.html
 
 ##################################################
 # Amazon Linux 2
-$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user@18.177.135.117
+$ ssh -i ./blackjlearnaws-ssh-key.pem ec2-user@13.114.59.147
+$ ssh -i ~/.ssh/blackjlearnaws-ssh-key.pem ec2-user@13.114.59.147
 ##################################################
 # 安全登入訊息
 $ touch .hushlogin
@@ -63,7 +64,7 @@ $ git version
 # 可選安裝nmap
 $ sudo yum install nmap -y
 ############################################
-## 安裝 nano
+## exec 入 container 安裝 nano
 $ apt-get update
 $ apt-get upgrade
 $ apt install nano
