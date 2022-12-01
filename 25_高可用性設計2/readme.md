@@ -17,7 +17,7 @@
 
 ### 建立目標組
 
-+ Name : blackjtsai-web-target-group
++ Name : blackjtsai-web-tg
 
 
 ### 建立 ALB負載均衡器 安全組
